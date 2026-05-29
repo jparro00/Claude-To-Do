@@ -182,6 +182,7 @@ These are tracked so we tighten the reference as you play:
 | Card name | Level | Cost | Trigger | Effect | VP |
 |-----------|-------|------|---------|--------|----|
 | _(Red gizmo — name n/a)_ | I | 1 🔴 Red | Pick a 🟡 Yellow energy | Obtain 1 random energy | 1 |
+| _(Generic VP gizmo — name n/a)_ | III | 7 any (Generic) | End of game (+) | Score **3 VP per qualifying card** — condition shown as a fan of starred cards; **likely per VP/scoring gizmo built** [CONFIRM from card text]. Generic = counts as all colors for build triggers. | variable (3× count) |
 
 ---
 
