@@ -171,7 +171,7 @@ These are tracked so we tighten the reference as you play:
 
 | Card name | Level | Cost | Trigger | Effect | VP |
 |-----------|-------|------|---------|--------|----|
-| _(none yet)_ | | | | | |
+| _(Red gizmo — name n/a)_ | I | 1 🔴 Red | Pick a 🟡 Yellow energy | Obtain 1 random energy | 1 |
 
 ---
 
