@@ -28,16 +28,16 @@
 
 Four energy colors (energy types). 13 marbles of each = **52 total**, drawn from a bag into the dispenser.
 
-| Color | Common theme |
-|-------|--------------|
-| 🔴 **Red** | Heat / Fire |
-| 🔵 **Blue** | Water |
-| 🟡 **Yellow** | Energy / Electricity |
-| ⚫ **Black** | Stone / Coal |
+| Color | Energy type |
+|-------|-------------|
+| 🔴 **Red** | **Heat** |
+| 🟡 **Yellow** | **Electric** |
+| 🔵 **Blue** | **Atomic** |
+| ⚫ **Black** | **Battery** |
 
-- The **Energy Dispenser** always shows **6** available marbles to choose from when you **Pick**.
-- Energy you hold lives in your **Energy Storage** (limit starts at **5**, see player board below).
-- Spent energy (to Build) goes **back into the bag**, not out of the game.
+- The **Energy Dispenser** always shows **6** available marbles in the **Energy Row** to choose from when you **Pick** (taking one reveals a new one).
+- Energy you hold lives in your **Energy Storage Ring** (limit starts at **5**, see player board below).
+- Spent energy (to Build) goes **back into the Energy Dispenser**, not out of the game. (If marbles aren't falling into the row, shuffle the dispenser.)
 
 ---
 
@@ -49,9 +49,11 @@ Every player starts with the same base limits. Many **upgrade gizmos** raise the
 |-------|---------------|--------------|
 | **Energy Storage** | **5** | How many energy marbles you can hold at once. |
 | **Archive (File) limit** | **1** | How many filed cards you can hold at once. |
-| **Research limit** | **3** | How many cards you look at when you Research. |
+| **Research limit** | **3** | How many cards you look at when you Research. **[VERIFY]** exact default. |
 
-> **[VERIFY]** Whether each player begins with a starting gizmo card (vs. just the base limits). I believe play begins with only the base limits and no built gizmos — confirm from the rulebook setup section.
+- Each player **starts with one Starting Gizmo** already built (it counts toward the 16-gizmo end-game total).
+- The dashboard has an **Upgrades column** where upgrade gizmos go; they raise your marble limit, file limit, and/or research ability.
+- Built gizmos go below the dashboard, sorted by **Gizmo Type** (color). Stack same-type cards so all effects stay visible.
 
 ---
 
@@ -67,18 +69,18 @@ On your turn you perform **one** of these. (Triggered gizmo effects that fire as
 ### 4.2 PICK
 - Take **one energy marble** from the **6** in the dispenser and add it to your **Energy Storage**.
 - Cannot exceed your **Energy Storage limit** (start 5).
-- Picking energy is the most common trigger source (see "Upon Picking" gizmos).
+- Picking energy is the most common trigger source (see **Pick triggers**).
 
 ### 4.3 BUILD
 - Pay a gizmo's **energy cost** (return matching-color marbles to the bag) to build it.
 - You may build from **the market** *or* **your Archive**.
 - Place it in your tableau in its **color column**.
-- Building can trigger your **"Upon Building"** gizmos.
+- Building can trigger your **Build triggers**.
 
 ### 4.4 RESEARCH
 - Pick a **Level deck (I, II, or III)** and draw cards equal to your **Research limit** (start 3) from the top.
 - Then either **Build one** or **File one** of those drawn cards; return the rest to the **bottom** of that deck.
-- Researching can trigger your **"Upon Researching/Filing"** gizmos. **[VERIFY]** exact trigger interaction.
+- Note: some Build triggers read "whenever you build a card of this color, perform a Research action" — letting you research-and-build as a chain.
 
 ---
 
@@ -86,24 +88,25 @@ On your turn you perform **one** of these. (Triggered gizmo effects that fire as
 
 Each built gizmo activates when a specific **action** matches its trigger. This is what creates **chains**: a trigger that gives you energy can immediately set off an "Upon Picking" gizmo, which gives more energy, which triggers another, etc. — all within a single action.
 
-| Trigger type | Fires when you… | Typical effect |
-|--------------|-----------------|----------------|
-| **Upon Picking** | Pick / gain energy of the shown color | Gain an extra energy, or store energy free |
-| **Upon Filing** | File a card | Draw/gain a bonus, reduce cost, etc. |
-| **Upon Building** | Build a gizmo (sometimes of a specific color) | Gain energy / points / extra build |
-| **Upon Researching** | Research | Look at extra cards, gain a resource |
+There are **three trigger types**, matching the actions. The **color(s)** on the trigger icon tell you which energy/gizmo color sets it off — and a trigger can list **multiple colors** (e.g. "red **or** blue").
 
-> **[VERIFY]** The exact set/names of trigger types and the color-coding of the arc/banner on each card. Send me a photo of a card and I'll lock down the precise iconography here.
+| Trigger type | Fires when you… | Example |
+|--------------|-----------------|---------|
+| **Pick trigger** | Pick energy of the shown color(s) | "Whenever you pick a red or blue marble, obtain a random marble" |
+| **Build trigger** | Build a gizmo of the shown color(s) | "Whenever you build a blue card, pick one marble" / "build a red gizmo → research" |
+| **File trigger** | Perform a File action | "Whenever you file, obtain a random marble" |
+
+- **Pick triggers** are keyed to **energy colors**; **Build triggers** are keyed to **gizmo (card) colors**. Same four colors, two different meanings — watch which icon it is.
+- After the qualifying action resolves, you **may** take the gizmo's benefit.
 
 ### Special gizmo categories
-- **Converter gizmos** — let you spend an energy as if it were a different color when building (a free action during your build).
-- **Upgrade gizmos** — permanently raise your **Storage / Archive / Research** limits or give build discounts.
-- **Active gizmos** — a once-per-turn ability you can choose to use. **[VERIFY]**
+- **Convert effects** — change marbles into other colors/amounts, e.g. "every time you get a red marble, convert it into two blue marbles."
+- **Upgrade gizmos** — go in the Upgrades column; permanently raise your **marble limit / file limit / research ability** or give discounts.
 
-### Chain/cascade rules
+### Chain/cascade rules (the heart of the game)
 - Trigger effects resolve in the order you choose.
-- An effect that gains energy can re-trigger other "Upon Picking" gizmos → combo engine.
-- A gizmo can only trigger **once per triggering event** unless it says otherwise. **[VERIFY]**
+- One gizmo can trigger another: e.g. a **Build trigger → Pick**, which then fires a **Pick trigger** → more energy → etc.
+- **Each gizmo may only be used once per turn**, even if its trigger condition is met more than once that turn.
 
 ---
 
@@ -121,13 +124,11 @@ Each built gizmo activates when a specific **action** matches its trigger. This 
 
 ## 7. End of Game & Scoring
 
-**The game end is triggered when a player has built either:**
-- **16 gizmos total**, **OR**
-- **4 Level-III gizmos**.
+**The game end is triggered the moment a player builds either:**
+- their **16th gizmo total** (including the Starting Gizmo), **OR**
+- their **4th Level-III gizmo**.
 
-**[VERIFY]** these two thresholds and any 2-player variation.
-
-- Once triggered, **finish the current round** so all players have had an equal number of turns.
+- Once triggered, play continues **until the player to the right of the First Player completes their turn**, so everyone has had an equal number of turns.
 - The player who triggered the end may take a **bonus token / +1 VP**. **[VERIFY]**
 
 **Scoring:**
@@ -151,12 +152,12 @@ Each built gizmo activates when a specific **action** matches its trigger. This 
 ## 9. Open Questions / To Confirm
 
 These are tracked so we tighten the reference as you play:
-- [ ] Exact trigger-type names + arc/banner color mapping (need a card photo).
-- [ ] Starting setup: does each player begin with a gizmo?
-- [ ] Number of face-up cards per Level in the market.
-- [ ] End-game thresholds (16 gizmos / 4 Level-III) and 2-player tweaks.
-- [ ] End-game bonus token value and tiebreaker rules.
-- [ ] "Once per trigger event" limit on gizmos.
+- [ ] Default **Research limit** value (and how upgrades change it).
+- [ ] Number of face-up cards per Level in the Display Area.
+- [ ] End-game **bonus token** value and **tiebreaker** rules.
+- [ ] Whether the Starting Gizmo differs per player (drafted vs. identical).
+
+**Confirmed (resolved):** energy types (Red=Heat, Yellow=Electric, Blue=Atomic, Black=Battery) · Storage 5 / File 1 · 3 trigger types (Pick/Build/File) keyed to colors · multi-color triggers · each gizmo triggers once per turn · end-game = 16th gizmo or 4th Level-III, then finish the round · players start with a Starting Gizmo.
 
 ---
 
