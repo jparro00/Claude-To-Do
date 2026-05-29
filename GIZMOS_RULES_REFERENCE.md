@@ -111,6 +111,13 @@ There are **three trigger types**, matching the actions. The **color(s)** on the
 - Trigger effects resolve in the order you choose.
 - One gizmo can trigger another: e.g. a **Build trigger → Pick**, which then fires a **Pick trigger** → more energy → etc.
 - **Each gizmo may only be used once per turn**, even if its trigger condition is met more than once that turn.
+- A single real action **can** fire multiple gizmos at once (e.g. two "pick blue" cards both trigger on one blue Pick); the once-per-turn limit only blocks re-firing the *same* gizmo on a later matching event that turn.
+
+### ⚠️ "Pick" vs. "Obtain" (key nuance — chains only work one way)
+- **Pick** = choose a specific marble from the 6 in the **Energy Row**. This is what fires **Pick triggers**.
+- **Obtain a random energy** = draw blind from the dispenser. **NOT a Pick action** → does **not** trigger Pick gizmos, even if the color matches.
+- So an effect that *obtains a random* blue will **not** set off a "pick blue" gizmo. But an effect that lets you **Pick** a marble (your choice) **does** count and **will** chain.
+- **Rule of thumb:** *"Pick" effects chain; "obtain random" effects don't.*
 
 ---
 
