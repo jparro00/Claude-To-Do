@@ -104,7 +104,8 @@ There are **three trigger types**, matching the actions. The **color(s)** on the
   - Each converter can be used **once per turn**.
   - Multiple converters may be **combined in any order**, and you may **feed the output of one converter into another** (chain them): e.g. turn 1 blue → 2 blue with converter A, then turn one of those blues → red with converter B, ending with 1 blue + 1 red.
   - You cannot reuse the *same* converter twice in a turn, but different converters can chain freely.
-  - **Caveat:** converting 1 → 2 increases marbles held, which must still respect your **Energy Storage limit** (start 5).
+  - **Storage limit does NOT apply to converters.** A converter only changes how energy is *treated when spending it to build* — converted energy is **never placed in your ring**. So you may use a 1→2 converter even when your ring is full (e.g. 6/6); the "extra" energy exists only in the cost calculation and is spent immediately, never held.
+  - (Contrast: **Pick / obtain** effects *do* respect the storage limit, because they add energy to your ring.)
   - Examples: "treat 1 black as 1 energy of any type," "treat any 1 energy as any other type," "turn 1 blue into 2 blue."
 - **Generic gizmos** — built by spending **any combination of any energy**; once built they count as **all colors** for triggering Build effects.
 - **Upgrade gizmos** — go in the Upgrades column; permanently raise your **marble limit / file limit / research ability** or give discounts.
