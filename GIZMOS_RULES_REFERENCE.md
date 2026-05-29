@@ -86,7 +86,7 @@ On your turn you perform **one** of these. (Triggered gizmo effects that fire as
 
 ## 5. Triggers — the engine (most important section)
 
-Each built gizmo activates when a specific **action** matches its trigger. This is what creates **chains**: a trigger that gives you energy can immediately set off an "Upon Picking" gizmo, which gives more energy, which triggers another, etc. — all within a single action.
+Each built gizmo activates when a specific **action** matches its trigger. This is what creates **chains**: a trigger that gives you energy can immediately set off a **Pick trigger** gizmo, which gives more energy, which triggers another, etc. — all within a single action.
 
 There are **three trigger types**, matching the actions. The **color(s)** on the trigger icon tell you which energy/gizmo color sets it off — and a trigger can list **multiple colors** (e.g. "red **or** blue").
 
