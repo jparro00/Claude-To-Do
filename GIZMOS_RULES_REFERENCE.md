@@ -100,7 +100,11 @@ There are **three trigger types**, matching the actions. The **color(s)** on the
 - After the qualifying action resolves, you **may** take the gizmo's benefit.
 
 ### Special gizmo categories
-- **Convert effects** — change marbles into other colors/amounts, e.g. "every time you get a red marble, convert it into two blue marbles."
+- **Converter gizmos** — used **only during a Build action** to treat energy you have as a **different type (or quantity)** to help pay a gizmo's cost.
+  - Each converter can be used **once per turn**.
+  - Multiple converters may be **combined in any order** (e.g. black → red, then red → blue).
+  - Examples: "treat 1 black as 1 energy of any type," "treat any 1 energy as any other type."
+- **Generic gizmos** — built by spending **any combination of any energy**; once built they count as **all colors** for triggering Build effects.
 - **Upgrade gizmos** — go in the Upgrades column; permanently raise your **marble limit / file limit / research ability** or give discounts.
 
 ### Chain/cascade rules (the heart of the game)
