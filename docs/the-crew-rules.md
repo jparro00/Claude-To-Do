@@ -129,36 +129,73 @@ running into the 2026 game.
 
 ## Game three — Journey to the Ends of the Earth (2026)
 
-A standalone third entry: a globe-trotting hunt for Charlemagne's lost
-treasure, from Everest to the Amazon. Released mid-2026 at Gen Con.
+A standalone third entry: a globe-trotting hunt for Charlemagne's lost treasure.
+Structurally the biggest departure in the series — it is no longer a pass/fail
+mission game.
+
+**Sourcing note:** the 2026 rulebook could not be retrieved; the publisher's
+domain is blocked by this environment's egress policy. Items marked
+**[Reported]** come from published review and designer-diary coverage, not the
+rulebook. Treat them as a good working model, not gospel.
 
 ### Confirmed across multiple sources [Solid]
 
 - Standalone — not an expansion, needs nothing from the earlier boxes.
 - Thomas Sing / Thames & Kosmos, roughly 30 minutes, ages 10+.
-- Co-operative trick-taking with the same limited-communication core.
-- A campaign of roughly 24–25 stages, each its own mission with fresh rules
-  layered on, tracked via a logbook printed at the back of the rulebook.
-- Tasks lean further into whole-team objectives — the Deep Sea direction,
-  pushed harder.
+- Co-operative trick-taking with the series' limited-communication core.
+- A campaign of 25 stages, each printed on a page of a logbook.
+- Over a hundred task cards, each with a difficulty value that varies by
+  player count.
 - A *Globetrotter* mini-expansion exists alongside it.
 
-### What could not be pinned down [Unknown]
+### The race — the real structural change [Reported]
 
-- **Player count** — sources disagree between 2–5 and 3–5.
-- **Exact stage count** — both 24 and 25 appear in coverage.
-- **Deck composition and trump name** — the series has always used 36 colour
-  cards plus 4 trump and renames trump per theme, but neither is confirmed for
-  this edition. Don't assume they carry over unchanged.
-- **Communication rules** — some restricted communication is certain; whether
-  the token works exactly as before is not. Read this first; it's where
-  sequels in this series most often change the maths.
-- **The new mission mechanisms** — coverage promises "new mission mechanics"
-  without naming them. This is the genuinely new content.
+You are not simply passing or failing a mission. You race a second marker
+representing **time**, along a track, and a stage is several tasks long.
 
-These gaps are left marked rather than filled with plausible-sounding rules.
-For a game you're about to learn, a confident wrong rule is worse than a marked
-gap — you'd play twenty stages on a bad assumption before noticing.
+1. Tasks sit in two stacks. Before each round you choose between the two top
+   cards, judging only by their backs — you see what a task is worth, but not
+   what it asks of you.
+2. Play the hand and attempt the task.
+3. The time marker advances one space every round regardless.
+4. Your crew marker advances by the task's difficulty — **only if you
+   succeeded**. A harder task moves you further.
+5. Reach the end of the stage before time does and you win the stage.
+
+Two consequences worth absorbing:
+
+- **Failing a task is survivable.** You lose the ground it would have gained,
+  not the stage. A profound change from Planet Nine, where one broken task
+  ended the mission instantly.
+- **Difficulty becomes a gamble.** A big task you fail costs a round against a
+  clock that never stops.
+
+You may also discard a task twice per stage, so you aren't stuck holding a
+low-value card when you need a big advance.
+
+### Scoring [Reported]
+
+If the crew marker finishes first, you score negative points equal to the gap
+between the crew and time markers. If time gets there first, you score positive
+points equal to the number of tasks still needed. Lower is better — margin
+matters, not just the win.
+
+### Still unresolved [Unknown]
+
+- **How to read the value strip on a task card.** Cards carry per-player-count
+  values; the series convention (confirmed outright in Mission Deep Sea) is one
+  entry each for 3, 4 and 5 players. What is *not* confirmed is how entries like
+  `-7`, `-2` and `x2` resolve — difficulty (spaces advanced on success), a
+  modifier on what the task generates, or something else. Negative values don't
+  match Deep Sea's difficulty convention and a multiplier matches neither.
+  Needs the rulebook's task-card anatomy page.
+- **Player count.** Coverage splits between 2–5 and 3–5. Three-value strips
+  point at 3–5 plus a separate two-player variant, but that's inference.
+- **Communication rules.** Restricted communication is certain, and individual
+  tasks clearly override it (one reads "Only the guide may communicate").
+  Whether the baseline token works as before is unconfirmed.
+- **Deck composition and trump name.** Pink is confirmed present as a colour;
+  nothing else is.
 
 ## How to actually learn this
 
