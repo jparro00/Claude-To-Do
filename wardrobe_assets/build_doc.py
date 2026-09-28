@@ -398,6 +398,89 @@ tier_table("Tier 3 — the finishing signals", [
     ("Bag & shoe care", "One unbranded leather bag; cedar shoe trees + a horsehair brush."),
 ])
 
+# ============================================================ FIELD UPDATE (dated)
+doc.add_page_break()
+h1("Field Update — September 2026")
+para("A refresh on what's actually being worn by the wealthy and business class right now, and how the "
+     "shoe market has moved. Everything above remains the durable core; this section is the current "
+     "read as of fall 2026.", italic=True, color=GREY)
+
+h2("The headline: quiet luxury is now the baseline, not a trend")
+para("The single most important update: “quiet luxury” stopped being a trend and hardened into the "
+     "default standard for wealthy and business dressers. Industry reporting shows demand among affluent "
+     "men still rising in 2026 (searches up ~150% year-to-date). Fit over flash, no logos, muted "
+     "palette, fabric as the signal — more entrenched than ever. You're aimed at the right target.")
+
+h2("What's genuinely shifting this season")
+bullet("the senior tier has quietly dressed back up since the return-to-office wave — “the VP isn't in a "
+       "quarter-zip anymore.” Nobody sent a memo. For someone up for partner, the direction of travel is "
+       "slightly more polished, so being a notch sharper than your peers is now with the grain.",
+       bold_lead="The floor rose. ")
+bullet("the hard-shouldered “power suit” is now “for weddings and court.” What senior men actually wear: "
+       "unstructured jackets, knit blazers, hopsack sport coats — soft shoulders, easy drape. Exactly the "
+       "navy-hopsack direction in this guide.", bold_lead="Soft tailoring won. ")
+bullet("the defining detail of fall 2026 is tactile, tonal cloth — mohair, brushed wools, ribbed "
+       "fine-gauge knits, and muted Prince-of-Wales / glen checks done low-contrast. You now signal "
+       "through fabric, not through anything loud.", bold_lead="Texture does the work. ")
+bullet("camel, chocolate brown, taupe, charcoal, olive — “colors that feel expensive and go with "
+       "everything” — with a single jolt of burgundy or rich red as the accent. Brown has fully shed the "
+       "old “no brown in business” baggage and is arguably the status neutral right now.",
+       bold_lead="Earthy neutrals are the palette. ")
+bullet("double-breasted jackets, the occasional three-piece for genuinely formal occasions, and a muted "
+       "pinstripe revival are appearing among the more style-forward wealthy — but tonal and soft, never "
+       "flashy. Optional flourishes, not requirements.", bold_lead="Quiet formality is creeping back. ")
+
+h2("What this means for you (warm climate, partner-track)")
+bullet("a soft, textured sport coat — hopsack or a tonal glen-check — in navy, charcoal, or now "
+       "brown/olive is the most current piece you can wear.", bold_lead="Lean into texture + earth tones. ")
+bullet("if you buy one new thing this season, make it a camel or chocolate element (a fine-gauge knit or "
+       "trousers) — the most of-the-moment quiet-luxury signal without being a gamble.",
+       bold_lead="Add a warm neutral. ")
+bullet("the quarter-zip is the mass “polished casual” workhorse; for signaling seniority it reads a notch "
+       "junior. A merino crewneck or knit polo under the jacket is the wealthier version.",
+       bold_lead="Fine-gauge knits over quarter-zips. ")
+para("Honest caveat: much “fall 2026 trends” content (velvet, jewel tones, bold pinstripes) is trend "
+     "churn aimed at selling clothes. The durable signal is narrower on purpose — quiet luxury is the "
+     "standard, soft tailoring won, texture and earth tones are the accent, the floor rose. Chasing "
+     "visible trends is itself the tell you're trying to avoid.", italic=True, color=GREY)
+
+h2("Shoes — the 2026 tariff reshuffle")
+para("Tariffs redrew the value map this year. Footwear carries some of the highest US import duties of "
+     "any consumer good, and 2026 added pressure — but it landed unevenly:")
+bullet("Allen Edmonds is still made in Port Washington, Wisconsin, so it carries no import duty — a real, "
+       "new structural cost edge.", bold_lead="US-made is now tariff-insulated. ")
+bullet("Italian and Spanish leather footwear settled under the EU–US deal's ~15% all-inclusive ceiling "
+       "(rather than stacking on base rates), and the UK has its own arrangement — so Carmina (Spain), "
+       "Crockett & Jones and Loake (England) got less expensive than feared. The value case holds.",
+       bold_lead="European welted shoes largely dodged it. ")
+bullet("worth knowing for newer names like Grant Stone.", bold_lead="Asia-made shoes took the bigger hit. ")
+para("Brand status changes:", bold=True, color=NAVY)
+bullet("buy on sale ONLY, and inspect the pair. List has crept to ~$450–550, but it still drops to "
+       "~$200–250 on sale — that discounted, made-in-USA, resoleable price is the case. QC criticism has "
+       "gotten louder in 2026, so check welt stitching and finishing before buying.",
+       bold_lead="Allen Edmonds Park Avenue: ")
+bullet("still the buy-once sweet spot (~$475), and now better tariff-protected. Unchanged top pick.",
+       bold_lead="Carmina: ")
+bullet("still the value floor (~$200) for a first Goodyear-welted pair.", bold_lead="Meermin: ")
+bullet("a Spanish maker (same Almansa region as Carmina) repeatedly cited as the best quality-style-value "
+       "combo of 2026, often a bit cheaper than Carmina. Worth a serious look. Also rising: Myrqvist "
+       "(Portugal-made) and Velasca (Italy).", bold_lead="NEW — Berwick 1707: ")
+para("Revised smart-value order:  (1) Carmina (~$475) or Berwick 1707 — the safest value given tariffs;  "
+     "(2) Allen Edmonds Park Avenue on sale (~$230) if the QC checks out;  (3) Meermin (~$200) as the "
+     "value floor. Everything else in Section 3 — oxford-vs-derby, brown over black, suede for the heat, "
+     "resole-don't-replace — is unchanged.", bold=True, color=NAVY)
+
+up = doc.add_paragraph()
+ur = up.add_run("Update sources: "); ur.italic = True; ur.font.size = Pt(9); ur.font.color.rgb = GREY
+for label, url in [
+    ("WWD (quiet luxury still rising)", "https://wwd.com/menswear-news/mens-designer-luxury/quiet-luxury-menswear-sales-1239094035/"),
+    ("W Magazine (power suits, not at the office)", "https://www.wmagazine.com/fashion/power-suits-fall-2026-trend"),
+    ("Real Men Real Style (office 2026)", "https://www.realmenrealstyle.com/what-men-wear-to-the-office/"),
+    ("Stitchdown (footwear tariffs)", "https://www.stitchdown.com/info/how-tariffs-will-effect-the-quality-footwear-industry/"),
+    ("A Fine Pair of Shoes (best value GYW 2026)", "https://www.afinepairofshoes.co.uk/blogs/news/the-best-value-goodyear-welted-shoes-2026"),
+]:
+    add_hyperlink(up, url, label); up.add_run("  ·  ").font.size = Pt(9)
+
 # ============================================================ CAVEATS + SOURCES
 h1("Two Honest Caveats")
 bullet("The “old-money insider code” is eroding under social media, so chasing a recognizable “quiet "
