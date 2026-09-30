@@ -481,6 +481,121 @@ for label, url in [
 ]:
     add_hyperlink(up, url, label); up.add_run("  ·  ").font.size = Pt(9)
 
+# ============================================================ FIELD UPDATE 2 (denim + shopping)
+def link_bullet(lead, pairs, tail=""):
+    p = doc.add_paragraph(style="List Bullet")
+    if lead:
+        p.add_run(lead).bold = True
+    for i, (txt, url) in enumerate(pairs):
+        add_hyperlink(p, url, txt)
+        if i < len(pairs) - 1:
+            p.add_run("  ·  ")
+    if tail:
+        p.add_run(" " + tail)
+    return p
+
+doc.add_page_break()
+h1("Field Update — Denim, Versatile Shoes & Regional Shopping (Sept 30, 2026)")
+para("Captured from a working session on high-quality dark denim, the most versatile shoes to own, "
+     "and where to actually buy this tier in the East Tennessee region.", italic=True, color=GREY)
+
+h2("High-quality dark denim — what the wealthy actually wear")
+para("Dark denim is the only denim that belongs in a quiet-status wardrobe. The signal is in the "
+     "execution, not the label: deep color, clean finish, no logos, no distressing. The tiers:")
+bullet("Loro Piana, Brunello Cucinelli, Zegna, The Row — soft, dark, logo-free, ~$500–800. Literal "
+       "quiet-wealth denim.", bold_lead="Quiet-luxury (money-no-object): ")
+bullet("A.P.C. (the Petit New Standard is the reference), 3sixteen, and Japanese selvedge houses "
+       "(Momotaro, Iron Heart, Pure Blue Japan, Warehouse & Co). Reads as taste/knowledge, not spend. "
+       "~$200–400.", bold_lead="Connoisseur raw selvedge (the smart pick): ")
+bullet("Citizens of Humanity, AG (Tellis), Frame (L'Homme), Rag & Bone, Paige, DL1961 — soft, stretchy, "
+       "dark, no break-in. The affluent-professional default. ~$200–270.",
+       bold_lead="Comfort premium (no break-in): ")
+para("Hard avoid (new-money tells): True Religion, Robin's Jean, Affliction, Ed Hardy, flashy Diesel — "
+     "big contrast stitching, logo pockets, rhinestones, heavy whiskering.", color=RED, bold=True)
+
+h2("The detail rules that actually matter")
+bullet("deep indigo, a dark rinse/one-wash (near blue-black), or raw (darkest; fades to you). No light "
+       "or faded washes.", bold_lead="Color: ")
+bullet("no rips, no fading, no whiskering. Clean and dark, always.", bold_lead="Finish: ")
+bullet("minimal/no contrast stitching, no logo patch, no loud arcuate design. A small leather patch is "
+       "fine.", bold_lead="Back pockets: ")
+bullet("slim-straight or straight, trouser-like, clean break at the shoe. Not skinny, not baggy. "
+       "“Selvedge” (the self-edge seen when cuffed) is a subtle knowledge signal.", bold_lead="Fit: ")
+
+h2("Recommended dark-denim picks (direct links)")
+link_bullet("A.P.C. Petit New Standard — raw indigo, ~$250 (top quiet-status pick): ",
+            [("product page", "https://www.apcstore.com/petit-new-standard-jeans-iai-codbs-m09047.html")])
+link_bullet("3sixteen — raw selvedge, US-made, ~$220–230: ",
+            [("CS-100x Classic Straight", "https://www.3sixteen.com/products/cs-100x-classic-straight-indigo-selvedge"),
+             ("ST-120x Slim Tapered", "https://www.3sixteen.com/products/st-120x-slim-leg-shadow-selvedge-denim"),
+             ("CS-220x Double Black", "https://www.3sixteen.com/products/cs-220x-classic-straight-double-black")])
+link_bullet("Citizens of Humanity Gage Slim Straight — Falcon (cleanest dark), ~$268: ",
+            [("product page", "https://citizensofhumanity.com/products/gage-slim-straight-cashmere-denim-falcon")])
+link_bullet("AG Tellis Modern Slim — Stellar (near-black, clean), ~$205: ",
+            [("product page", "https://www.agjeans.com/products/tellis-modern-slim-1783ledslr")])
+link_bullet("Frame L'Homme Slim — Placid (dark blue), ~$228: ",
+            [("product page", "https://frame-store.com/products/lhomme-slim-placid")])
+para("Best per style:  cleanest dark + zero break-in → Citizens Gage in Falcon;  near-black clean → AG "
+     "Tellis Stellar;  buy-once, fades-to-you → 3sixteen CS-100x or A.P.C. Petit New Standard.",
+     italic=True, color=GREY)
+
+h2("Fit, sizing & hemming (raw denim)")
+bullet("get the WAIST right; length you can always fix. Raw denim stretches ~1\" in the waist, so size "
+       "DOWN one from your usual.", bold_lead="Waist is what matters. ")
+bullet("the least critical measurement — you hem it. Between 30 and 32? Buy the 32 and shorten it; easier "
+       "to remove length than wish you had more.", bold_lead="Length: ")
+bullet("aim for no break or a slight/quarter break — hem just kissing the shoe. Bring the loafers you'll "
+       "wear to the tailor.", bold_lead="Break: ")
+bullet("ask for a chain-stitch hem and to reuse the original hem — it preserves the selvedge “roping” "
+       "fade. Or cuff once to show the selvedge edge. Don't wash raw denim for the first couple months; "
+       "hem to the final length after any shrink.", bold_lead="Selvedge hemming: ")
+
+h2("The most versatile shoes to own (all-rounders)")
+para("Three styles cover almost everything — suit, business casual, jeans, dinner, warm climate:")
+bullet("the single most versatile shoe (suit → chinos → dark jeans → dinner). Burgundy/oxblood quietly "
+       "out-classes plain brown.", bold_lead="1. Dark-brown / burgundy penny loafer — ")
+bullet("the dress anchor for suited/formal days. Dark brown does more than black in a warm climate.",
+       bold_lead="2. Dark-brown cap-toe oxford — ")
+bullet("the warm-climate smart-casual workhorse (chinos or dark jeans + blazer).",
+       bold_lead="3. Suede loafer — ")
+para("Value picks: Carmina (~$475) or Berwick 1707 (2026 value riser) — both Spanish, Goodyear-welted; "
+     "Allen Edmonds Park Avenue on sale (~$230, made in USA); Meermin (~$200 floor). If you buy two, the "
+     "penny + cap-toe oxford cover ~90% of your life.", italic=True, color=GREY)
+
+h2("Where to buy this tier in person — East Tennessee")
+bullet("no dedicated high-end welted-shoe retailer. (Hardwick Clothes, the historic American suitmaker, "
+       "is based here — but that's suits.) The value brands (Carmina, Berwick, Meermin, A.P.C., 3sixteen) "
+       "are online-only in the US regardless.", bold_lead="Cleveland, TN: ")
+bullet("Dillard's at Hamilton Place carries Allen Edmonds (Park Avenue), Cole Haan, Johnston & Murphy — "
+       "best bet for a same-day, Goodyear-welted shoe in your size. Yacoubian Tailors (629 Broad St) is "
+       "an upscale clothier that also carries Allen Edmonds (call ahead; thin shoe stock). Bruce Baird & "
+       "Co. was the Alden dealer but the downtown store closed/relocated in 2025 — call before relying on "
+       "it.", bold_lead="Chattanooga (~30 min): ")
+bullet("M.S. McClellan & Co. (5614 Kingston Pike) — an authorized Alden dealer and the best in-person "
+       "high-end option in the region. Call ahead to confirm Alden stock in your size.",
+       bold_lead="Knoxville (~1.25–1.5 hr): ")
+bullet("Nordstrom at The Mall at Green Hills — the region's best Allen Edmonds selection plus premium "
+       "denim (AG, Citizens, Frame). J.Crew carries a limited Alden selection.",
+       bold_lead="Nashville (~2.5 hr): ")
+
+h2("Brands to skip (seen while shopping)")
+bullet("fast-fashion, glued soles, flashy metal-bit hardware — the try-hard tell.", bold_lead="Steve Madden: ")
+bullet("fine brands, wrong category — casual/weekend only (boat shoes, duck boots).",
+       bold_lead="Sperry / L.L.Bean: ")
+bullet("acceptable stopgap for business casual, but cemented (not resoleable) — not a buy-for-life shoe.",
+       bold_lead="Cole Haan: ")
+bullet("comfort brands — casual styling, not a status/dress shoe.", bold_lead="Josef Seibel / Pikolinos: ")
+
+up2 = doc.add_paragraph()
+ur2 = up2.add_run("Update sources: "); ur2.italic = True; ur2.font.size = Pt(9); ur2.font.color.rgb = GREY
+for label, url in [
+    ("A.P.C. (official store)", "https://www.apcstore.com/petit-new-standard-jeans-iai-codbs-m09047.html"),
+    ("3sixteen denim", "https://www.3sixteen.com/collections/denim"),
+    ("Dillard's Hamilton Place", "https://dillards.com/stores/hamilton-place-chattanooga-tennessee/0430"),
+    ("Chattanoogan — Bruce Baird closure", "https://www.chattanoogan.com/2025/9/19/508790/Bruce-Baird-Explains-Why-Downtown-Store.aspx"),
+]:
+    add_hyperlink(up2, url, label); up2.add_run("  ·  ").font.size = Pt(9)
+
 # ============================================================ CAVEATS + SOURCES
 h1("Two Honest Caveats")
 bullet("The “old-money insider code” is eroding under social media, so chasing a recognizable “quiet "
